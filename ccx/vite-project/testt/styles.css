@@ -1,0 +1,168 @@
+/* General container styles */
+
+.container-wrapper {
+  width: auto;
+  height:90%; 
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.container {
+  width: 100%; /* Default width for small screens */
+  max-width: 100%; /* Prevent overflow for very small devices */
+  margin: 0 auto; /* Center the container */
+  padding: 0 15px; /* Add padding for spacing */
+  height:100%;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    
+  }
+  .heading{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+  }
+
+
+  .container {
+    display: flex;
+    display: column;
+  }
+  
+   .container nav {
+    
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    height:100%;
+    position: sticky;
+    top: 15%;
+    left: 0;
+  }
+  .main-doc{
+    display:flex;
+  }
+  
+  nav input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+  }
+  .input-text{
+    display:flex;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ddd;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 100;
+  }
+
+  .highlight {
+    background-color: #fffa8b; 
+    transition: background-color 0.3s ease;
+  }
+
+  @media only screen and (min-width: 370px) {
+    .container {
+      width: 350px;
+      height:100%;
+    }
+     .container-wrapper {
+    width: auto;
+    height:90%; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  }
+  
+  @media only screen and (min-width: 576px) {
+    .container {
+      width: 540px;
+      height:100%;
+    }
+     .container-wrapper {
+    width: auto;
+    height:90%; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 1200px) {
+    .container {
+      width: 1000px;
+      height:100%;
+    }
+    .container-wrapper {
+    width: auto;
+    height:90%; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  }
+  
+  /* Large Desktop (up to 1920px) */
+  @media only screen and (min-width: 1920px) {
+    .container {
+      width: 1440px; 
+      height:100%;
+    }
+    .container-wrapper {
+      width: auto;
+      height:90%; 
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+  }
+  
